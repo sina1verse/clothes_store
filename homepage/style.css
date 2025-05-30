@@ -1,0 +1,432 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* header */
+header {
+    display: flex;
+    width: 100%;
+    height: 30px;
+    background-color: #C88787;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+}
+
+header h3 {
+    margin: 0 10px;
+}
+
+header h3 a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/* nav */
+.navbar-top {
+    background-color: #D9D9D9;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    height: 70px;
+}
+
+.navbar-user {
+    display: flex;
+    width: 180px;
+    justify-content: space-between;
+    margin: 15px 15px 0 0;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 0; 
+    right: 0; 
+    margin-inline: auto; 
+    width: fit-content;
+}
+
+.logo a {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+}
+
+.navbar-top__link {
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}
+
+.search-icon {
+    background-image: url(pics/Search_light.png) ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 25px;
+    width: 25px;
+}
+
+
+.liked-icon {
+    background-image: url(pics/heart.png) ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 25px;
+    width: 25px;
+}
+
+.sign-in-icon {
+    background-image: url(pics/user.png) ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 25px;
+    width: 25px;
+}
+
+.cart-icon {
+    background-image: url(pics/Bag_alt_light.png) ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 25px;
+    width: 25px;
+}
+
+.navbar-bottom {
+    background-color: #D9D9D9;    
+}
+
+.navbar-bottom ul {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-bottom li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.navbar-bottom a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.35rem;
+}
+
+
+/* banners */
+.banners {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.banner1 {
+    grid-column: 1 / span 2;
+    width: 100%;
+    position: relative;
+}
+
+.banner2 {
+    width: 100%;
+    position: relative;
+}
+
+.banner3 {
+    width: 100%;
+    position: relative;
+} 
+
+.price-frame {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+}
+
+.price-frame p {
+    padding: 10px;
+}
+
+#price-frame-1 {
+    top: 50px;
+    left: 20px;
+}
+
+#price-frame-2 {
+    top: 50px;
+    left: 20px;
+}
+
+#price-frame-3 {
+    top: 50px;
+    right: 20px;
+}
+
+
+/* Trending */
+.trend-heading {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#trend-left-line {
+    display: block;
+    height: 1px;
+    width: 35%;
+    background-color: black;
+}
+
+#trend-right-line {
+    display: block;
+    height: 1px;
+    width: 35%;
+    background-color: black;
+}
+
+.trend-frame {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+}
+
+.trend-box {
+    width: 90%;
+    height: 90%;
+    margin: auto;
+}
+
+.trend-tiles {
+    display: grid;
+    grid-template-areas: 
+    'tile1  tile2 tile2'
+    'tile1  empty-tile tile3'
+    'tile4  tile4   tile3';
+    gap: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+.tile1 { 
+    grid-area: tile1;
+    background-image: url(/pics/tile-model1.jpg);
+    background-size: cover;
+    
+}
+.tile2 { 
+    grid-area: tile2;
+    background-image: url(/pics/tile-model2.jpg);
+    background-size: cover;
+}
+.tile3 {
+    grid-area: tile3;
+    background-image: url(/pics/tile-model3.jpg);
+    background-size: cover;
+}
+.tile4 { 
+    grid-area: tile4;
+    background-image: url(/pics/tile-model4.jpg);
+    background-size: cover;
+}
+.empty-tile { 
+    grid-area: empty-tile;
+}
+
+
+#tile {
+    background-color: #D9D9D9;
+}
+
+#tile a {
+    text-decoration: none;
+    color: #c88787;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    font-weight: 300;
+}
+
+.tile-container-vertical {
+    width:  250px;
+    height: 100%;
+    position: relative;
+    
+}
+
+.tile-container-horizontal {
+    width:  100%;
+    height: 100%;
+    position: relative;
+}
+
+.trend-tiles__title1 {
+    position: absolute;
+    bottom: 0;
+}
+
+.trend-tiles__title2 {
+    position: absolute;
+}
+
+.trend-tiles__title3 {
+    position: absolute;
+}
+
+.trend-tiles__title4 {
+    position: absolute;
+    right: 0;
+}
+
+.trend-tiles__title4 h2 {
+    direction: rtl;
+}
+
+.trend-tiles__title4 h3 {
+    direction: rtl;
+}
+
+#trend-tiles__title {
+    padding: 10px;
+}
+
+
+/* clothes types */
+.types-frame {
+    height: 500px;
+    background-color: #C88787;
+}
+
+.types-box {
+    height: 100%;
+    width: 90%;
+    background-color: #c46161;
+    margin: auto;
+}
+
+.types-cards {
+    
+    padding: 20px 0;
+    width: 100%;
+}
+
+.cards-container {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    width: 20%;
+    aspect-ratio: 1 / 1;
+    padding: 10px;
+}
+
+.types-cards img {
+    width: 100%;
+    height: 100%;
+}
+
+.types-cards h3 {
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+
+/* Bestsellers */
+.bsellers-frame {
+    margin: auto;
+}
+
+.bsellers-title {
+    margin: 5px 0;
+}
+
+.bsellers-items {
+    position: relative;
+}
+
+.item-frame {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    height: 500px;
+}
+
+.item {
+    background-color: #D9D9D9;
+    height: 100%;
+    border-left: 0.5px solid black;
+    position: relative;
+    z-index: 1;
+}
+
+#last-item {
+    border-right: 1px solid black;
+
+}
+
+.item-text {
+    position: absolute;
+    bottom: 0;
+
+}
+
+.color-selection {
+    padding: 5px;
+    display: flex;
+}
+
+.color1 {
+    width: 4vh;
+    height: 4vh;
+    background-color: beige;
+    margin: 5px;
+}
+
+.color2 {
+    width: 4vh;
+    height: 4vh;
+    background-color: black;
+    margin: 5px;
+}
+
+.left-arrow {
+    position: absolute;
+    z-index: 2;
+    margin: 30px;
+    top: 50%
+}
+
+.right-arrow {
+    position: absolute;
+    z-index: 2;
+    margin: 30px;
+    top: 50%;
+    right: 0;
+}
+
+
+/* footer */
+footer {
+    margin: 60px 0 0 0;
+}
+
+.info-box-frame {
+    display: flex;
+    justify-content: space-around;
+}
+
+.info-box {
+    height: 500px;
+    width: 500px;
+    background-color: #c46161;
+    border: 5px solid black;
+    border-radius: 35px;
+}
