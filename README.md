@@ -13,7 +13,7 @@ This project demonstrates how to create a simple, responsive web page using only
 ## File Structure
 
 project-folder/
-├── homepage/
+├── home-page/
 │ ├── index.html
-│ ├── styles.css
-├── pics/
+│ └── styles.css
+└── pics/
