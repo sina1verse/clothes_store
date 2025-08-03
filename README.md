@@ -1,4 +1,4 @@
-# A Web Page Using Vanilla HTML and CSS
+# Vanilla HTML/CSS online store page
 
 This project demonstrates how to create a simple, responsive web page using only **HTML** and **CSS**, without any frameworks or JavaScript.
 
