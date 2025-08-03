@@ -293,7 +293,7 @@
         </div>
 
         <div class="bottom-links-frame">
-            <table>
+            <table class="footer-table">
                 <tr>
                     <th>Orders and Returns</th>
                     <th>Get Help</th>
@@ -313,14 +313,25 @@
                     <td>FAQ</td>
                   </tr>
             </table>
-        </div>
-         <form action="/" style="width: 200px; height: 60px;"><label for="email">Email</label></form>
+         <!-- Email Subscription Form -->
         <div class="newsletter-form">
-
+            <form action="/" method="POST">
+            <label for="email">Subscribe to our newsletter</label>
+            <div class="form-controls">
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </div>
+            </form>
         </div>
 
+        <!-- Rights and Transfers Section -->
         <div class="rights-and-transferings">
-
+            <p>© 2025 Your Company. All rights reserved.</p>
+            <p>
+            By subscribing, you agree to our 
+            <a href="#">Privacy Policy</a> and 
+            <a href="#">Terms of Service</a>.
+            </p>
         </div>
     </footer>
 
